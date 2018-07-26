@@ -1,0 +1,14 @@
+---
+label: Test
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  default: '1'
+- type: textarea
+  default: '2'
+- type: field_group
+  name: testing_testing
+  label: Testing testing
+  description: plz work
+- type: field_group_list
