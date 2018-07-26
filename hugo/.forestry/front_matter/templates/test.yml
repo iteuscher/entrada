@@ -12,3 +12,5 @@ fields:
   label: Testing testing
   description: plz work
 - type: field_group_list
+pages:
+- hugo/content/blog.html
