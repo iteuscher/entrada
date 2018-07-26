@@ -1,5 +1,6 @@
 ---
-title:  "Welcome to Hugo!"
+title: Welcome to America!!!
+
 ---
 You’ll find this post in your `content/posts` directory.
 
