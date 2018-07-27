@@ -8,7 +8,9 @@ sections:
   path: hugo/content
   label: Pages
   create: all
-- path: hugo/content/blog
+  match: "*"
+- type: directory
+  path: hugo/content/blog
   label: Blog
   create: all
   match: "**/*"
