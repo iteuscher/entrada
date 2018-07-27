@@ -55,103 +55,49 @@
                     <p class="description">Read our blog with updates about our companies and how they are doing.</p>
                 </div>
             </div>
+            
             <div class="container">
-
-                <ul>
-                    {{ range $.Site.Pages }}
-                    <li style="display: none{{ .Title }};">
-                        <a style="font-size: 20px;" href="{{ .Permalink }}"> {{ .Title }} - {{ .Date.Format "2006-01-02" }}</a>
-                    </li>
-                    {{ end }}
-                </ul>
-
-
-
                 <div class="masonry-container">
-
-                    <div class="card-box col-md-4 col-sm-6">
+            
+                    {{ range .Data.Pages }}
+                    <div style="display: none{{ .Title}};" class="card-box col-md-4 col-sm-6">
                         <div class="card">
-                            <div class="header" style="background-image: url('img/sunset-comp.jpg')" data-background="image" data-src="img/sunset-comp.jpg">
-                                <!-- <img src="card-images/lifestyle-8.jpg" /> -->
-                                <div class="filter"></div>
-
-                                <div class="actions">
-                                    <button class="btn btn-round btn-fill btn-neutral btn-modern">
-                                        Read Article
-                                    </button>
-                                </div>
+                            <div class="header" data-background="image" data-src="img/sunset-comp.jpg">
+                                <a href="{{ .Permalink }}">
+            
+                                    <img src="/img/sunset-comp.jpg" />
+                                    <div class="filter"></div>
+            
+                                    <div class="actions">
+                                        <a href="{{ .Permalink }}" class="btn btn-round btn-fill btn-neutral btn-modern">
+                                            Read Post
+                                        </a>
+                                    </div>
+            
+                                    <div class="category">
+                                        <h6 class="label label-danger">New Post</h6>
+                                    </div>
+            
+                                </a>
                             </div>
-
+            
                             <div class="content">
-                                <h6 class="category">News</h6>
+                                <h6 class="category">{{ .Date.Format "01/01/2006" }}</h6>
                                 <h4 class="title">
-                                    <a href="/post"> Example Blogpost #1</a>
+                                    <a href="{{ .Permalink }}">{{ .Title }}</a>
                                 </h4>
-                                <p class="description"> Some amazing writing about entrepreneurship and business. Absolutely riveting. </p>
+                                <p class="description"> Some amazing writing about entrepreneurship and business. </p>
                             </div>
+            
                         </div>
                         <!-- end card -->
                     </div>
-
-
-                    <div class="card-box col-md-4 col-sm-6">
-                        <div class="card" data-background="image" data-src="img/handshake-2.jpg">
-                            <div class="header">
-                                <div class="category">
-                                    <h6 class="label label-danger">New Post</h6>
-                                </div>
-                            </div>
-
-                            <div class="content">
-                                <h4>
-                                    <a href="">Example Blogpost #2</a>
-                                </h4>
-                                <p class="description">Some amazing writing about entrepreneurship and business. Absolutely riveting. </p>
-                            </div>
-                            <div class="filter">
-
-                            </div>
-                        </div>
-                        <!-- end card -->
-                    </div>
-
-
-
-
-                    <div class="card-box col-md-4 col-sm-6">
-                        <div class="card">
-                            <div class="header" data-background="image" data-src="img/office-1.jpeg">
-                                <!-- <img src="card-images/beard-1.jpg" /> -->
-
-                                <div class="social-line social-line-visible" data-buttons="4">
-                                    <button class="btn btn-social btn-facebook">
-                                        <i class="fa fa-facebook"></i>
-                                    </button>
-                                    <button class="btn btn-social btn-twitter">
-                                        <i class="fa fa-twitter"></i>
-                                    </button>
-                                    <button class="btn btn-social btn-pinterest">
-                                        <i class="fa fa-pinterest"></i>
-                                    </button>
-                                    <button class="btn btn-social btn-google">
-                                        <i class="fa fa-google-plus"></i>
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="content">
-                                <h6 class="category">News</h6>
-                                <h4 class="title">Example Blogpost #3</h4>
-                                <p class="description"> Some amazing writing about entrepreneurship and business. Absolutely riveting..</p>
-                            </div>
-                        </div>
-                        <!-- end card -->
-                    </div>
-
-
-
+                    {{ end }}
+            
                 </div>
             </div>
+            <!-- inside container -->
+
 
         </div>
     </div>
