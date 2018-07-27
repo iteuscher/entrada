@@ -1,6 +1,10 @@
 ---
 title: Welcome to America!!!
-
+author: "Michael Henderson"
+# date: 2014-09-28
+linktitle: Welcome to the USA
+# next: /tutorials/github-pages-blog
+# prev: /tutorials/automated-deployments
 ---
 You’ll find this post in your `content/posts` directory.
 

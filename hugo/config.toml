@@ -48,6 +48,10 @@ author = "Xentez"
   identifier = "home"
   url = "/"
 
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
 # Related Content
 # ---------------
 # Enable the options below to use Hugo's related

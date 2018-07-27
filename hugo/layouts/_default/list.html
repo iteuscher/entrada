@@ -1196,14 +1196,16 @@
               </div>
               <div class="container">
 
-                <ul>
-                    {{/* Loops through and displays all child pages */}}
-                    {{ range .Data.Pages }}
-                        <li>
-                        <a href="{{ .Permalink }}"> {{ .Title }} - {{ .Date.Format "2006-01-02" }}</a>
-                        </li>
-                    {{ end }}
-                </ul>
+        <ul>
+            {{/* Loops through and displays all child pages */}}
+            {{ range .Data.Pages }}
+                <li style="display: none{{ .Title}};">
+                <a style="font-size: 20px;" href="{{ .Permalink }}"> {{ .Title }} - {{ .Date.Format "2006-01-02" }}</a>
+                </li>
+            {{ end }}
+        </ul>
+
+         
 
                   <div class="masonry-container">
 

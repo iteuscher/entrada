@@ -7,8 +7,8 @@ sections:
 - path: hugo/content
   label: Pages
   create: all
-- path: hugo/content/posts
-  label: Posts
+- path: hugo/content/blog
+  label: Blog
   create: all
 upload_dir: hugo/uploads
 public_path: "/uploads"
