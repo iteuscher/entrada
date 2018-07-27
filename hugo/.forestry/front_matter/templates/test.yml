@@ -19,3 +19,4 @@ fields:
 - type: field_group_list
 pages:
 - hugo/content/blog.md
+- hugo/content/contact.html
