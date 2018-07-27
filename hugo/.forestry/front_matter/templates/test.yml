@@ -18,5 +18,6 @@ fields:
   default: '2'
 - type: field_group_list
 pages:
+- hugo/content/pitch.html
 - hugo/content/blog.md
 - hugo/content/contact.html
