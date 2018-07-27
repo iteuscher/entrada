@@ -14,4 +14,3 @@ fields:
 - type: field_group_list
 pages:
 - hugo/content/blog.html
-- hugo/content/ron.md
