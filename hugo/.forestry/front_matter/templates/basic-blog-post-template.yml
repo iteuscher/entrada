@@ -1,0 +1,36 @@
+---
+label: Basic Blog Post Template
+hide_body: false
+is_partial: false
+fields:
+- type: datetime
+  name: date
+  label: Date of Blog Post Upload
+  description: Probably today...
+  config:
+    required: true
+    display_utc: false
+- type: text
+  name: title
+  label: Title of the Blog Post
+  description: Keep it short but still descriptive (and not clickbait)
+  config:
+    required: true
+- type: textarea
+  name: main_content
+  label: Main Content of the Blog Post
+  description: Write in Markdown or plain text!
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: file
+  label: Cover Image of the Blog Post
+  name: cover_image
+  description: This will be displayed as the thumbnail and at the top of the blog
+    post
+- type: tag_list
+  name: tags
+  label: Tags for Blog Post
+  description: 'eg: Tech, IPO, Medical, Space, New Investment, etc'
