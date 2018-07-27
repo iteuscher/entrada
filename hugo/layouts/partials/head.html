@@ -8,7 +8,9 @@
     <base href="{{ $.Site.BaseURL }}">
     <title>{{ if .Page.Title }}{{ .Page.Title }} - {{ end }}{{ .Site.Title }}</title>
     <!-- <title>Entrada Ventures</title> -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ "img/favicon.ico" | relURL }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
 
     <meta name="author" content="{{ $.Param "author" }}">
     <meta name="description" content="{{ $.Param "description" }}">
