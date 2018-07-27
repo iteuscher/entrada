@@ -17,5 +17,3 @@ fields:
 - type: textarea
   default: '2'
 - type: field_group_list
-pages:
-- hugo/content/dirk.md
