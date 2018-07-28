@@ -16,6 +16,9 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
+- type: text
+  name: urllink
+  label: URL Link to company website
 - type: file
   name: logo
   label: 'Company Logo image '
