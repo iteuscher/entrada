@@ -1,6 +1,6 @@
 ---
 label: Basic Blog Post Template
-hide_body: true
+hide_body: false
 is_partial: false
 fields:
 - type: datetime
