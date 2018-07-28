@@ -35,4 +35,5 @@ fields:
   label: Tags for Blog Post
   description: 'eg: Tech, IPO, Medical, Space, New Investment, etc'
 pages:
+- hugo/content/blog/test.md
 - hugo/content/blog/is-the-blog-fully-operational.md
