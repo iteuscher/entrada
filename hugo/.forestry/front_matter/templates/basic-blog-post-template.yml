@@ -42,4 +42,5 @@ fields:
   - Space
   - New Investment
 pages:
+- hugo/content/blog/k.md
 - hugo/content/blog/is-the-blog-fully-operational.md
