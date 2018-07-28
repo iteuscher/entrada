@@ -1,6 +1,6 @@
 ---
 label: Investment Template
-hide_body: false
+hide_body: true
 is_partial: false
 fields:
 - type: text
@@ -16,6 +16,7 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
+  description: '1-3 sentences '
 - type: text
   name: urllink
   label: URL Link to company website
@@ -29,12 +30,9 @@ fields:
   label: Tags for Company
   default:
   - IPO
-  - Medical
-  - Space
   - Software
   - Biotech
   - Robotics
-  - Nanotech
   - Connected Devices
   - AI
   - Acquired
