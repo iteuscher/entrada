@@ -1,0 +1,37 @@
+---
+label: Investment Template
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: companyname
+  label: Name of Company
+  config:
+    required: true
+- type: textarea
+  name: shortdescription
+  label: Short description of the company
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+- type: file
+  name: logo
+  label: 'Company Logo image '
+  description: Google company name and logo -> Right click -> copy image address ->
+    open image -> download image -> upload!
+- type: tag_list
+  name: tags
+  label: Tags for Company
+  default:
+  - IPO
+  - Medical
+  - Space
+  - Software
+  - Biotech
+  - Robotics
+  - Nanotech
+  - Connected Devices
+  - AI
+  - Acquired
