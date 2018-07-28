@@ -56,47 +56,48 @@
                 </div>
             </div>
             
-            <div class="container">
-                <div class="masonry-container">
-            
-                    {{ range .Data.Pages }}
-                    <div style="display: none{{ .Title}};" class="card-box col-md-4 col-sm-6">
-                        <div class="card">
-                            <div class="header" data-background="image" data-src="img/sunset-comp.jpg">
-                                <a href="{{ .Permalink }}">
-            
-                                    <img src="/img/sunset-comp.jpg" />
-                                    <div class="filter"></div>
-            
-                                    <div class="actions">
-                                        <a href="{{ .Permalink }}" class="btn btn-round btn-fill btn-neutral btn-modern">
-                                            Read Post
-                                        </a>
-                                    </div>
-            
-                                    <div class="category">
-                                        <h6 class="label label-danger">New Post</h6>
-                                    </div>
-            
+        <div class="container">
+            <div class="masonry-container">
+        
+                {{ range .Data.Pages }}
+                <div style="display: none{{ .Title}};" class="card-box col-md-4 col-sm-6">
+                    <div class="card">
+        
+                        <div class="header">
+                            <a class="header" style="position: absolute; top: 0; left: 0; max-width: 100%; overflow: hidden; 
+                                            background-image: url('img/seperator-banner-1.jpg')" href="{{ .Permalink }}">
+                            </a>
+        
+                            <div class="actions">
+                                <a href="{{ .Permalink }}" class="btn btn-round btn-fill btn-neutral btn-modern">
+                                    Read Post
                                 </a>
                             </div>
-            
-                            <div class="content">
-                                <h6 class="category">{{ .Date.Format "01/01/2006" }}</h6>
-                                <h4 class="title">
-                                    <a href="{{ .Permalink }}">{{ .Title }}</a>
-                                </h4>
-                                <p class="description"> Some amazing writing about entrepreneurship and business. </p>
+        
+        
+                            <div class="category">
+                                <h6 class="label label-danger">New Post</h6>
                             </div>
-            
+        
+        
                         </div>
-                        <!-- end card -->
+        
+                        <div class="content">
+                            <h6 class="category">{{ .Date.Format "01/01/2006" }}</h6>
+                            <h4 class="title">
+                                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                            </h4>
+                            <p class="description">{{ .Summary }} </p>
+                        </div>
+        
                     </div>
-                    {{ end }}
-            
+                    <!-- end card -->
                 </div>
+                {{ end }}
+        
             </div>
-            <!-- inside container -->
+        </div>
+        <!-- inside container -->
 
 
         </div>

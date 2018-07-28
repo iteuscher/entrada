@@ -5,10 +5,25 @@
         <h2 class="blog-post-title" style="text-align: center;">
             <a href="{{ .RelPermalink }}">{{ .Title }}</a>
         </h2>
-    </header>
-    {{ .Content }}
 
-    <br>
+
+        <p>Posted on {{ .Date.Format "01/01/2006" }}
+            <br>
+            {{.ReadingTime}} Minute Read
+            <br>
+            Tags: {{.Params.tags}}</p>
+
+             <!-- {{ range .Params.tags }}
+                 Tag
+             {{end}} -->
+
+
+    </header>
+
+    <div style="padding: 5%;">
+        {{ .Content }}
+    </div>
+
     <br>
 
     <h3>
@@ -18,6 +33,8 @@
 </article>
 
 {{ partial "footer" . }}
+
+
 
  <!-- {{ define "main" }}
 <section id="main">
