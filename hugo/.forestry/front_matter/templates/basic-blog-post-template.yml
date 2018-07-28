@@ -1,11 +1,11 @@
 ---
 label: Basic Blog Post Template
-hide_body: false
+hide_body: true
 is_partial: false
 fields:
 - type: datetime
   name: date
-  label: Date of Blog Post Upload
+  label: Date of The Blog Post's Upload
   description: Probably today...
   config:
     required: true
@@ -17,9 +17,10 @@ fields:
   config:
     required: true
 - type: textarea
-  name: main_content
-  label: Main Content of the Blog Post
-  description: Write in Markdown or plain text!
+  name: summary
+  label: Summary of the Blog Post
+  description: 1-3 sentence preview or summary of the blog post. Displayed below thumbnail
+    and title. Write in Markdown or plain text!
   config:
     required: true
     wysiwyg: true
@@ -27,13 +28,19 @@ fields:
       format: markdown
 - type: file
   label: Cover Image of the Blog Post
-  name: cover_image
+  name: image
   description: This will be displayed as the thumbnail and at the top of the blog
     post
 - type: tag_list
   name: tags
-  label: Tags for Blog Post
-  description: 'eg: Tech, IPO, Medical, Space, New Investment, etc'
+  label: Tag(s) for Blog Post
+  description: ''
+  default:
+  - Tech
+  - IPO
+  - Medical
+  - Space
+  - New Investment
 pages:
 - hugo/content/blog/test.md
 - hugo/content/blog/is-the-blog-fully-operational.md
