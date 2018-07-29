@@ -2,8 +2,8 @@
 companyname = "Spinal Singularity"
 date = "2018-07-29T07:37:38+00:00"
 logo = "img/uploads/2018/07/29/spinalsingularitylogo.png"
-shortdescription = "Short description of the company goes here"
-tags = ["inv-1", "IPO", "Software", "Biotech", "Robotics", "Connected Devices", "AI", "Acquired"]
+shortdescription = "Spinal Singularity designs medical devices to exponentially improve the quality of life for people with Spinal Injury."
+tags = ["inv-1", "Biotech", "Robotics"]
 title = "Spinal Singularity"
 urllink = "http://www.spinalsingularity.com"
 
