@@ -20,10 +20,10 @@ fields:
   name: summary
   label: Summary of the Blog Post
   description: 1-3 sentence preview or summary of the blog post. Displayed below thumbnail
-    and title. Write in Markdown or plain text!
+    and title. DO NOT LEAVE BLANK!
   config:
     required: true
-    wysiwyg: true
+    wysiwyg: false
     schema:
       format: markdown
 - type: file
