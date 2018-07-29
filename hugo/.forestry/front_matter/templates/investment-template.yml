@@ -37,5 +37,6 @@ fields:
   - AI
   - Acquired
 pages:
+- hugo/content/investments/bioiq.md
 - hugo/content/investments/spinal-singularity.md
 - hugo/content/investments/invoca.md
