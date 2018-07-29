@@ -119,9 +119,11 @@ $(function () {
     // Hide the menu when the "x" button or a nav-link is clicked.
     $('.navmenulink').each(function(){
         $(this).on('click', function (e) {
-            console.log ("clicked!!")
-            e.preventDefault();
-            slideOut();
+            if (!navbarCollapse.is(":visible") && body.hasClass('side-menu-visible')) {
+                console.log ("clicked!!")
+                e.preventDefault();
+                slideOut();
+            }
         });
         console.log($(this));
     })
