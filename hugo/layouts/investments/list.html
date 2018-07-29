@@ -1,8 +1,7 @@
 {{ partial "head" . }}
 
 <div id="content" style="position:absolute; top:0px; left:0px; width:100%">
-    
-        <nav class="navbar navbar-default navbar-transparent navbar-fixed-top" color-on-scroll="200">
+    <nav class="navbar navbar-default navbar-transparent navbar-fixed-top" color-on-scroll="200">
             <div class="container">
                 <div class="navbar-header">
                     <!-- id="menu-toggle" -->
@@ -43,172 +42,256 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+    </nav>
 
-    <div id="blog" class="section">
-        <div style="padding-top: 30px;"></div>
-        <div class="container">
-            <div class="row">
-                <div class="title-area">
-                    <h2>News & Blog</h2>
-                    <div class="separator separator-danger">✻</div>
-                    <p class="description">Read our blog with updates about our companies and how they are doing.</p>
+    <div class="jumbotron" style="padding:2%; text-align: center">
+            <h1 class="display-4">Our Investments</h1>
+            <hr class="my-4" style="border-color: #448f49; border-width: 3px; border-radius: 30px; width: 50%; margin: 0 auto">
+            <br>
+            <p class="lead">Explore some of the companies our partners have helped succeed over the years.</p>
+    </div>
+
+    <div style="display:flex; flex-direction: row; justify-content: space-around">
+  
+            <div class="card-columns">
+              <div class="card">
+                <a class="card-link" href="https://www.invoca.com"></a>
+                <img class="card-img-top" src="/img/investment_logos/invoca.png" alt="Card image top">
+                <div class="card-img-overlay text-center title-area">
+                  <h2>INVOCA</h2>
+                  <p class="description text-white">
+                    This will be a short description of the company.
+                  </p>
                 </div>
-            </div>
-            
-        <div class="container">
-            <div class="masonry-container">
-        
-                {{ range .Data.Pages }}
-                <div style="display: none{{ .Title}};" class="card-box col-md-4 col-sm-6">
-                    <div class="card">
-        
-                        <div class="header">
-                            <a class="header" style="position: absolute; top: 0; left: 0; max-width: 100%; overflow: hidden; 
-                                            background-image: url('img/seperator-banner-1.jpg')" href="{{ .Permalink }}">
-                            </a>
-        
-                            <div class="actions">
-                                <a href="{{ .Permalink }}" class="btn btn-round btn-fill btn-neutral btn-modern">
-                                    Read Post
-                                </a>
-                            </div>
-        
-        
-                            <div class="category">
-                                <h6 class="label label-danger">New Post</h6>
-                            </div>
-        
-        
-                        </div>
-        
-                        <div class="content">
-                            <h6 class="category">{{ .Date.Format "01/01/2006" }}</h6>
-                            <h4 class="title">
-                                <a href="{{ .Permalink }}">{{ .Title }}</a>
-                            </h4>
-                            <p class="description">{{ .Summary }} </p>
-                        </div>
-        
-                    </div>
-                    <!-- end card -->
+              </div>
+              <div class="card">
+                <a class="card-link" href="https://www.sonos.com"></a>
+                <img class="card-img-top" src="/img/investment_logos/sonos-logo.svg" alt="Card image top">
+                <div class="card-img-overlay text-center title-area">
+                  <h2>SONOS</h2>
+                  <p class="description text-white">
+                    This will be a short description of the company.
+                  </p>
                 </div>
-                {{ end }}
-        
+              </div>
+              <div class="card">
+                <a class="card-link" href="http://apeelsciences.com/"></a>
+                <img class="card-img-top" src="/img/investment_logos/apeel-logo.png" alt="Card image top">
+                <div class="card-img-overlay text-center title-area">
+                  <h2>APEEL</h2>
+                  <p class="description text-white">
+                    This will be a short description of the company.
+                  </p>
+                </div>
+              </div>
             </div>
-        </div>
-        <!-- inside container -->
-
-
-        </div>
+      
+      
+            <div class="card-columns">
+              <div class="card">
+                <a class="card-link" href="https://www.bioiq.com"></a>
+                <img class="card-img-top" src="/img/investment_logos/BioIQ-logo.png" alt="Card image top">
+                <div class="card-img-overlay text-center title-area">
+                  <h2>BIO IQ</h2>
+                  <p class="description text-white">
+                    This will be a short description of the company.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <a class="card-link" href="https://www.hgdata.com"></a>
+                <img class="card-img-top" src="/img/investment_logos/hgdata-logo.png" alt="Card image top">
+                <div class="card-img-overlay text-center title-area">
+                  <h2>HG DATA</h2>
+                  <p class="description text-white">
+                    This will be a short description of the company.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <a class="card-link" href="https://www.snapwi.re/"></a>
+                <img class="card-img-top" src="/img/investment_logos/snapwire-logo.png" alt="Card image top">
+                <div class="card-img-overlay text-center title-area">
+                  <h2>SNAPWIRE</h2>
+                  <p class="description text-white">
+                    This will be a short description of the company.
+                  </p>
+                </div>
+              </div>
+            </div>
+      
+            <div class="card-columns">
+              <div class="card">
+                <a class="card-link" href="http://connexity.com"></a>
+                <img class="card-img-top" src="/img/investment_logos/connexity-logo.png" alt="Card image top">
+                <div class="card-img-overlay text-center title-area">
+                  <h2>CONNEXITY</h2>
+                  <p class="description text-white">
+                    This will be a short description of the company.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <a class="card-link" href="https://cytomx.com"></a>
+                <img class="card-img-top" src="/img/investment_logos/cytomx-logo.png" alt="Card image top">
+                <div class="card-img-overlay text-center title-area">
+                  <h2>CYTOMIX</h2>
+                  <p class="description text-white">
+                    This will be a short description of the company.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <a class="card-link" href="https://cielo24.com"></a>
+                <img class="card-img-top" src="/img/investment_logos/cielo24-logo.png" alt="Card image top">
+                <div class="card-img-overlay text-center title-area">
+                  <h2>CIELO 24</h2>
+                  <p class="description text-white">
+                    This will be a short description of the company.
+                  </p>
+                </div>
+              </div>
+            </div>
+      
+            <div class="card-columns">
+              <div class="card">
+                <a class="card-link" href="https://www.procore.com"></a>
+                <img class="card-img-top" src="/img/investment_logos/procore-logo.png" alt="Card image top">
+                <div class="card-img-overlay text-center title-area">
+                  <h2>PROCORE</h2>
+                  <p class="description text-white">
+                    This will be a short description of the company.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <a class="card-link" href="http://www.spinalsingularity.com"></a>
+                <img class="card-img-top" src="/img/investment_logos/spinalsingularity-logo.png" alt="Card image top">
+                <div class="card-img-overlay text-center title-area">
+                  <h2>SPINAL SINGULARITY</h2>
+                  <p class="description text-white">
+                    This will be a short description of the company.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <a class="card-link" href="https://secure.thetrackr.com/"></a>
+                <img class="card-img-top" src="/img/investment_logos/TrackR-logo.png" alt="Card image top">
+                <div class="card-img-overlay text-center title-area">
+                  <h2>TRACK R</h2>
+                  <p class="description text-white">
+                    This will be a short description of the company.
+                  </p>
+                </div>
+              </div>
+            </div>
     </div>
 
     <footer class="footer footer-big footer-color-black" data-color="black">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2 col-sm-3">
-                    <div class="info">
-                        <h5 class="title">Pages</h5>
-                        <nav>
-                            <ul>
-                                <li>
-                                    <a href="#">Home</a>
-                                </li>
-                                <li>
-                                    <a href="#">About Us</a>
-                                </li>
-                                <li>
-                                    <a href="#">Our Team</a>
-                                </li>
-                                <li>
-                                    <a href="#">Our Investements</a>
-                                </li>
-                                <!-- <li>
-                                        <a href="#">Our Services</a>
-                                    </li> -->
-                                <li>
-                                    <a href="#">Contact Us</a>
-                                </li>
-                                <li>
-                                    <a href="#">News & Blog</a>
-                                </li>
-                            </ul>
-                        </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-sm-3">
+                        <div class="info">
+                            <h5 class="title">Pages</h5>
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Our Team</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Our Investements</a>
+                                    </li>
+                                    <!-- <li>
+                                            <a href="#">Our Services</a>
+                                        </li> -->
+                                    <li>
+                                        <a href="#">Contact Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">News & Blog</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1 col-sm-3">
+                        <div class="info">
+                            <h5 class="title"> Help and Support</h5>
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="#">Contact Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Company Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Terms &amp; Conditions</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <div class="info">
+                            <h5 class="title">Latest News</h5>
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-twitter"></i>
+                                            <b>Yay! </b> One of our companies got bought! ...
+                                            <hr class="hr-small">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-twitter"></i> We've just been featured
+                                            <b>Somewhere</b>! Thank you everybody for...
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-md-offset-1 col-sm-3">
+                        <div class="info">
+                            <h5 class="title">Follow us on</h5>
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="#" class="btn btn-social btn-facebook btn-simple">
+                                            <i class="fa fa-facebook-square"></i> Facebook
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="btn btn-social btn-twitter btn-simple">
+                                            <i class="fa fa-twitter"></i> Twitter
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="btn btn-social btn-reddit btn-simple">
+                                            <i class="fa fa-google-plus-square"></i> Google+
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-md-offset-1 col-sm-3">
-                    <div class="info">
-                        <h5 class="title"> Help and Support</h5>
-                        <nav>
-                            <ul>
-                                <li>
-                                    <a href="#">Contact Us</a>
-                                </li>
-                                <li>
-                                    <a href="#">Company Policy</a>
-                                </li>
-                                <li>
-                                    <a href="#">Terms &amp; Conditions</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-3">
-                    <div class="info">
-                        <h5 class="title">Latest News</h5>
-                        <nav>
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-twitter"></i>
-                                        <b>Yay! </b> One of our companies got bought! ...
-                                        <hr class="hr-small">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-twitter"></i> We've just been featured
-                                        <b>Somewhere</b>! Thank you everybody for...
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-                <div class="col-md-2 col-md-offset-1 col-sm-3">
-                    <div class="info">
-                        <h5 class="title">Follow us on</h5>
-                        <nav>
-                            <ul>
-                                <li>
-                                    <a href="#" class="btn btn-social btn-facebook btn-simple">
-                                        <i class="fa fa-facebook-square"></i> Facebook
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="btn btn-social btn-twitter btn-simple">
-                                        <i class="fa fa-twitter"></i> Twitter
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="btn btn-social btn-reddit btn-simple">
-                                        <i class="fa fa-google-plus-square"></i> Google+
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
+                <hr>
+                <div class="copyright">
+                    ©
+                    <script> document.write(new Date().getFullYear()) </script> Entrada Ventures
                 </div>
             </div>
-            <hr>
-            <div class="copyright">
-                ©
-                <script> document.write(new Date().getFullYear()) </script> Entrada Ventures
-            </div>
-        </div>
     </footer>
-
 </div>
 
 {{ partial "footer" . }}
