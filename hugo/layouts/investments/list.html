@@ -62,11 +62,11 @@
                         <li class="filter">
                             <a class="selected"   data-type="all">All</a>
                         </li>
-                        <li class="filter" data-filter=".color-1">
-                            <a   data-type="color-1">Color 1</a>
+                        <li class="filter" data-filter=".inv-1">
+                            <a   data-type="inv-1">Jason Spievak</a>
                         </li>
-                        <li class="filter" data-filter=".color-2">
-                            <a   data-type="color-2">Color 2</a>
+                        <li class="filter" data-filter=".inv-2">
+                            <a   data-type="inv-2">Class of 2018</a>
                         </li>
                     </ul>
                     <!-- cd-filters -->
@@ -78,7 +78,9 @@
             <section class="cd-gallery">
                 <ul>
                     {{ range .Data.Pages }}
-                        <li class="mix color-1 check3 radio2 option4 card">
+                        <li class="mix card {{ range .Params.tags }} {{ . }} {{ end }}" >
+                    <!-- color-1 check3 radio2 option4  -->
+                            
                             <a target="_blank" class="card-link" href="{{ .Params.urllink }}"></a>
                             <img class="card-img-top" src="{{ .Params.logo }}" alt="Card image top">
                             <div class="card-img-overlay text-center title-area">
@@ -167,36 +169,56 @@
                         <h4>Search</h4>
         
                         <div class="cd-filter-content">
-                            <input type="search" placeholder="Try color-1...">
+                            <input type="search" placeholder="Try Biotech...">
                         </div>
                         <!-- cd-filter-content -->
                     </div>
                     <!-- cd-filter-block -->
         
                     <div class="cd-filter-block">
-                        <h4>Check boxes</h4>
+                        <h4>Catagories</h4>
         
                         <ul class="cd-filter-content cd-filters list">
                             <li>
-                                <input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
-                                <label class="checkbox-label" for="checkbox1">Option 1</label>
+                                <input class="filter" data-filter=".IPO" type="checkbox" id="checkbox1">
+                                <label class="checkbox-label" for="checkbox1">IPO</label>
+                            </li>
+
+                            <li>
+                                <input class="filter" data-filter=".Acquired" type="checkbox" id="checkbox2">
+                                <label class="checkbox-label" for="checkbox2">Acquired</label>
                             </li>
         
                             <li>
-                                <input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
-                                <label class="checkbox-label" for="checkbox2">Option 2</label>
+                                <input class="filter" data-filter=".Software" type="checkbox" id="checkbox3">
+                                <label class="checkbox-label" for="checkbox3">Software</label>
                             </li>
         
                             <li>
-                                <input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
-                                <label class="checkbox-label" for="checkbox3">Option 3</label>
+                                <input class="filter" data-filter=".Biotech" type="checkbox" id="checkbox4">
+                                <label class="checkbox-label" for="checkbox4">Biotech</label>
+                            </li>
+
+                            <li>
+                                <input class="filter" data-filter=".ai" type="checkbox" id="checkbox5">
+                                <label class="checkbox-label" for="checkbox5">AI</label>
+                            </li>
+
+                            <li>
+                                <input class="filter" data-filter=".connecteddevices" type="checkbox" id="checkbox6">
+                                <label class="checkbox-label" for="checkbox6">Connected Devices</label>
+                            </li>
+
+                            <li>
+                                <input class="filter" data-filter=".robotics" type="checkbox" id="checkbox6">
+                                <label class="checkbox-label" for="checkbox6">Robotics</label>
                             </li>
                         </ul>
                         <!-- cd-filter-content -->
                     </div>
                     <!-- cd-filter-block -->
         
-                    <div class="cd-filter-block">
+                    <!-- <div class="cd-filter-block">
                         <h4>Select</h4>
         
                         <div class="cd-filter-content">
@@ -209,13 +231,12 @@
                                     <option value=".option4">Option 4</option>
                                 </select>
                             </div>
-                            <!-- cd-select -->
+ 
                         </div>
-                        <!-- cd-filter-content -->
-                    </div>
+                    </div> -->
                     <!-- cd-filter-block -->
         
-                    <div class="cd-filter-block">
+                    <!-- <div class="cd-filter-block">
                         <h4>Radio buttons</h4>
         
                         <ul class="cd-filter-content cd-filters list">
@@ -234,16 +255,14 @@
                                 <label class="radio-label" for="radio3">Choice 3</label>
                             </li>
                         </ul>
-                        <!-- cd-filter-content -->
-                    </div>
-                    <!-- cd-filter-block -->
+                    </div> -->
                 </form>
         
-                <a   class="cd-close">Close</a>
+                <a class="cd-close">Close</a>
             </div>
             <!-- cd-filter -->
         
-            <a   class="cd-filter-trigger">Filters</a>
+            <a class="cd-filter-trigger">Filters</a>
         </main>
 
     <div style="display:flex; flex-direction: row; justify-content: space-around">
