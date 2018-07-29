@@ -1203,25 +1203,26 @@
                 <div class="masonry-container">
 
                     {{ range .Data.Pages }}
-                        <div style="display: none{{ .Title}};" class="card-box col-md-4 col-sm-6">
+                        <div style="display: none{{ .Params.summary }}" class="card-box col-md-4 col-sm-6">
                             <div class="card">
-                                
-                                <div class="header" >
-                                    <a class="header" style="position: absolute; top: 0; left: 0; max-width: 100%; overflow: hidden; 
-                                    background-image: url('img/seperator-banner-1.jpg')" 
-                                    href="{{ .Permalink }}">
-                                    </a>
-
-                                        <div class="actions">
-                                                <a href="{{ .Permalink }}" class="btn btn-round btn-fill btn-neutral btn-modern">
-                                                    Read Post
-                                                </a>
-                                        </div>
+                        
+                                <div class="header">
+                        
+                                    <div>
+                                        <img style="max-width: 80%; max-height: 75%; overflow: hidden; display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 1;" src="{{ .Params.image }}">
+                                        <a href="{{ .Permalink }}"></a>
+                                    </div>
+                        
+                                    <div class="actions">
+                                        <a href="{{ .Permalink }}" class="btn btn-round btn-fill btn-neutral btn-modern">
+                                            Read Post
+                                        </a>
+                                    </div>
                                     
 
-                                        <div class="category">
-                                            <h6 class="label label-danger">New Post</h6>
-                                        </div>
+                                    <div class="category">
+                                        <h6 class="label label-danger">New Post</h6>
+                                    </div>
 
                                     
                                 </div>

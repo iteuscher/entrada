@@ -1,6 +1,6 @@
 +++
 date = "2018-07-27T23:16:22+00:00"
-image = "/uploads/2018/07/28/download.jpg"
+image = "img/uploads/2018/07/28/download.jpg"
 summary = "Let's hope this blog post shows everything in it!"
 tags = ["Tech", "IPO"]
 title = "Is the Blog... Fully Operational?? pt 2"

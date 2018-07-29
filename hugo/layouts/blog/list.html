@@ -41,29 +41,29 @@
     </nav>
 
 
-    <div id="blog" class="section">
-        <div style="padding-top: 30px;"></div>
-        <div class="container">
-            <div class="row">
-                <div class="title-area">
-                    <h2>News & Blog</h2>
-                    <div class="separator separator-danger">✻</div>
-                    <p class="description">Read our blog with updates about our companies and how they are doing.</p>
-                </div>
-            </div>
-            
+        <div class="jumbotron" style="padding:2%; text-align: center">
+            <h1 class="display-4">News & Blog</h1>
+            <hr class="my-4" style="border-color: #448f49; border-width: 3px; border-radius: 30px; width: 50%; margin: 0 auto">
+            <br>
+            <p class="lead">Read our blog with updates about our companies and how they are doing.</p>
+        </div>
+
+  
         <div class="container">
             <div class="masonry-container">
         
                 {{ range .Data.Pages }}
                 <div class="card-box col-md-4 col-sm-6">
                     <div class="card">
-        
+                
                         <div class="header">
-                            <a class="header" style="position: absolute; top: 0; left: 0; max-width: 100%; overflow: hidden; 
-                                            background-image: url('img/seperator-banner-1.jpg')" href="{{ .Permalink }}">
-                            </a>
-        
+                
+                            <div>
+                                <img style="max-width: 80%; max-height: 75%; overflow: hidden; display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 1;" 
+                                src="{{ .Params.image }}">
+                                <a href="{{ .Permalink }}"></a>
+                            </div>
+                
                             <div class="actions">
                                 <a href="{{ .Permalink }}" class="btn btn-round btn-fill btn-neutral btn-modern">
                                     Read Post
@@ -95,9 +95,6 @@
         </div>
         <!-- inside container -->
 
-
-        </div>
-    </div>
 
     <footer class="footer footer-big footer-color-black" data-color="black">
         <div class="container">

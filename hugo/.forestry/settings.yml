@@ -19,7 +19,7 @@ sections:
   label: Investments
   create: all
   match: "**/*"
-upload_dir: hugo/img/uploads
+upload_dir: src/img/uploads
 public_path: img/uploads
 front_matter_path: ''
 use_front_matter_path: false
