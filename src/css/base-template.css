@@ -1064,7 +1064,7 @@ a,
   height: 100%;
   color: #FFFFFF;
 }
-.filter:before {
+/* .filter:before {
   position: absolute;
   left: 0;
   top: 0;
@@ -1075,7 +1075,7 @@ a,
   content: "";
   opacity: .7;
   background: #333;
-}
+} */
 .filter .title-area .description {
   color: #FFFFFF;
 }

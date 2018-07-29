@@ -16,7 +16,20 @@ html{font-size:14px;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body
   /* Opera 11.10+ */
   /* IE10+ */background:linear-gradient(to bottom,#fff 0%,hsla(0,0%,100%,.95) 22%,hsla(0,0%,100%,.9) 30%,hsla(0,0%,100%,.7) 65%,hsla(0,0%,100%,0) 100%);
   /* W3C */filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="rgba(0, 255, 255, 1)",GradientType=0)
-  /* IE6-9 */}.section-our-team .text-area{padding-bottom:0}.filter{position:relative;height:100%;color:#fff}.filter:before{position:absolute;left:0;top:0;width:100%;height:100%;display:block;z-index:3;content:"";-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";opacity:.7;background:#333}.filter .separator,.filter .title-area .description{color:#fff}.filter .separator:after,.filter .separator:before{border-color:#fff}.filter.filter-color-black:before{background:#333}.filter.filter-color-gold:before{background:#bd986c}.filter.filter-color-green:before{background:#55bea4}.filter.filter-color-blue:before{background:#008b9c}.filter.filter-color-purple:before{background:#50236f}.filter.filter-color-red:before{background:#de6168}.filter.filter-gradient-black:before{background:#1f1c2c;
+  /* IE6-9 */}.section-our-team .text-area{padding-bottom:0}.filter{position:relative;height:100%}
+
+/* .filter:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 3;
+  content: "";
+  opacity: .7;
+  background: #333;
+} */.filter,.filter .separator,.filter .title-area .description{color:#fff}.filter .separator:after,.filter .separator:before{border-color:#fff}.filter.filter-color-black:before{background:#333}.filter.filter-color-gold:before{background:#bd986c}.filter.filter-color-green:before{background:#55bea4}.filter.filter-color-blue:before{background:#008b9c}.filter.filter-color-purple:before{background:#50236f}.filter.filter-color-red:before{background:#de6168}.filter.filter-gradient-black:before{background:#1f1c2c;
   /* Old browsers */
   /* FF3.6+ */
   /* Chrome,Safari4+ */
