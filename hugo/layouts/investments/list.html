@@ -51,6 +51,201 @@
             <p class="lead">Explore some of the companies our partners have helped succeed over the years.</p>
     </div>
 
+    <main class="cd-main-content">
+            <div class="cd-tab-filter-wrapper">
+                <div class="cd-tab-filter">
+                    <ul class="cd-filters">
+                        <li class="placeholder">
+                            <a data-type="all"  >All</a>
+                            <!-- selected option on mobile -->
+                        </li>
+                        <li class="filter">
+                            <a class="selected"   data-type="all">All</a>
+                        </li>
+                        <li class="filter" data-filter=".color-1">
+                            <a   data-type="color-1">Color 1</a>
+                        </li>
+                        <li class="filter" data-filter=".color-2">
+                            <a   data-type="color-2">Color 2</a>
+                        </li>
+                    </ul>
+                    <!-- cd-filters -->
+                </div>
+                <!-- cd-tab-filter -->
+            </div>
+            <!-- cd-tab-filter-wrapper -->
+        
+            <section class="cd-gallery">
+                <ul>
+                    {{ range .Data.Pages }}
+                        <li class="mix color-1 check3 radio2 option4 card">
+                            <a target="_blank" class="card-link" href="{{ .Params.urllink }}"></a>
+                            <img class="card-img-top" src="{{ .Params.logo }}" alt="Card image top">
+                            <div class="card-img-overlay text-center title-area">
+                                <h2>{{ .Params.companyname }}</h2>
+                                <p class="description text-white">
+                                    {{ .Params.shortdescription }}
+                                </p>
+                            </div>
+                        </li>
+                    {{ end }}
+                    <!-- <li class="mix color-1 check1 radio2 option3 card">
+                        <a class="card-link" href="http://www.spinalsingularity.com"></a>
+                        <img class="card-img-top" src="/img/investment_logos/spinalsingularity-logo.png" alt="Card image top">
+                        <div class="card-img-overlay text-center title-area">
+                            <h2>SPINAL SINGULARITY</h2>
+                            <p class="description text-white">
+                            This will be a short description of the company.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="mix color-2 check2 radio2 option2 card">
+                        <a class="card-link" href="https://secure.thetrackr.com/"></a>
+                        <img class="card-img-top" src="/img/investment_logos/TrackR-logo.png" alt="Card image top">
+                        <div class="card-img-overlay text-center title-area">
+                            <h2>TRACK R</h2>
+                            <p class="description text-white">
+                            This will be a short description of the company.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="mix color-1 check3 radio3 option1 card">
+                        <a class="card-link" href="https://cielo24.com"></a>
+                        <img class="card-img-top" src="/img/investment_logos/cielo24-logo.png" alt="Card image top">
+                        <div class="card-img-overlay text-center title-area">
+                            <h2>CIELO 24</h2>
+                            <p class="description text-white">
+                            This will be a short description of the company.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="mix color-1 check3 radio2 option4 card">
+                        <a class="card-link" href="https://cytomx.com"></a>
+                        <img class="card-img-top" src="/img/investment_logos/cytomx-logo.png" alt="Card image top">
+                        <div class="card-img-overlay text-center title-area">
+                            <h2>CYTOMIX</h2>
+                            <p class="description text-white">
+                            This will be a short description of the company.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="mix color-1 check3 radio2 option4 card">
+                            <a class="card-link" href="https://www.procore.com"></a>
+                            <img class="card-img-top" src="/img/investment_logos/procore-logo.png" alt="Card image top">
+                            <div class="card-img-overlay text-center title-area">
+                                <h2>PROCORE</h2>
+                                <p class="description text-white">
+                                This will be a short description of the company.
+                                </p>
+                            </div>
+                    </li>
+                    <li class="mix color-1 check3 radio2 option4 card">
+                        <a class="card-link" href="https://www.invoca.com"></a>
+                        <img class="card-img-top" src="img/investment_logos/invoca.png" alt="Card image top">
+                        <div class="card-img-overlay text-center title-area">
+                            <h2>INVOCA</h2>
+                            <p class="description text-white">
+                            This will be a short description of the company.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="mix color-1 check3 radio2 option4 card">
+                            
+                    </li>
+                     -->
+                    <li class="gap"></li>
+                    <li class="gap"></li>
+                    <li class="gap"></li>
+                </ul>
+                <div class="cd-fail-message">No results found</div>
+            </section>
+            <!-- cd-gallery -->
+        
+            <div class="cd-filter">
+                <form>
+                    <div class="cd-filter-block">
+                        <h4>Search</h4>
+        
+                        <div class="cd-filter-content">
+                            <input type="search" placeholder="Try color-1...">
+                        </div>
+                        <!-- cd-filter-content -->
+                    </div>
+                    <!-- cd-filter-block -->
+        
+                    <div class="cd-filter-block">
+                        <h4>Check boxes</h4>
+        
+                        <ul class="cd-filter-content cd-filters list">
+                            <li>
+                                <input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
+                                <label class="checkbox-label" for="checkbox1">Option 1</label>
+                            </li>
+        
+                            <li>
+                                <input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
+                                <label class="checkbox-label" for="checkbox2">Option 2</label>
+                            </li>
+        
+                            <li>
+                                <input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
+                                <label class="checkbox-label" for="checkbox3">Option 3</label>
+                            </li>
+                        </ul>
+                        <!-- cd-filter-content -->
+                    </div>
+                    <!-- cd-filter-block -->
+        
+                    <div class="cd-filter-block">
+                        <h4>Select</h4>
+        
+                        <div class="cd-filter-content">
+                            <div class="cd-select cd-filters">
+                                <select class="filter" name="selectThis" id="selectThis">
+                                    <option value="">Choose an option</option>
+                                    <option value=".option1">Option 1</option>
+                                    <option value=".option2">Option 2</option>
+                                    <option value=".option3">Option 3</option>
+                                    <option value=".option4">Option 4</option>
+                                </select>
+                            </div>
+                            <!-- cd-select -->
+                        </div>
+                        <!-- cd-filter-content -->
+                    </div>
+                    <!-- cd-filter-block -->
+        
+                    <div class="cd-filter-block">
+                        <h4>Radio buttons</h4>
+        
+                        <ul class="cd-filter-content cd-filters list">
+                            <li>
+                                <input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
+                                <label class="radio-label" for="radio1">All</label>
+                            </li>
+        
+                            <li>
+                                <input class="filter" data-filter=".radio2" type="radio" name="radioButton" id="radio2">
+                                <label class="radio-label" for="radio2">Choice 2</label>
+                            </li>
+        
+                            <li>
+                                <input class="filter" data-filter=".radio3" type="radio" name="radioButton" id="radio3">
+                                <label class="radio-label" for="radio3">Choice 3</label>
+                            </li>
+                        </ul>
+                        <!-- cd-filter-content -->
+                    </div>
+                    <!-- cd-filter-block -->
+                </form>
+        
+                <a   class="cd-close">Close</a>
+            </div>
+            <!-- cd-filter -->
+        
+            <a   class="cd-filter-trigger">Filters</a>
+        </main>
+
     <div style="display:flex; flex-direction: row; justify-content: space-around">
   
             <div class="card-columns">
@@ -188,160 +383,7 @@
     </div>
 
         
-        <main class="cd-main-content">
-            <div class="cd-tab-filter-wrapper">
-                <div class="cd-tab-filter">
-                    <ul class="cd-filters">
-                        <li class="placeholder">
-                            <a data-type="all"  >All</a>
-                            <!-- selected option on mobile -->
-                        </li>
-                        <li class="filter">
-                            <a class="selected"   data-type="all">All</a>
-                        </li>
-                        <li class="filter" data-filter=".color-1">
-                            <a   data-type="color-1">Color 1</a>
-                        </li>
-                        <li class="filter" data-filter=".color-2">
-                            <a   data-type="color-2">Color 2</a>
-                        </li>
-                    </ul>
-                    <!-- cd-filters -->
-                </div>
-                <!-- cd-tab-filter -->
-            </div>
-            <!-- cd-tab-filter-wrapper -->
-        
-            <section class="cd-gallery">
-                <ul>
-                    <li class="mix color-1 check1 radio2 option3">
-                        <h1>Investment 1</h1>
-                    </li>
-                    <li class="mix color-2 check2 radio2 option2">
-                        <h1>Investment 2</h1>
-                    </li>
-                    <li class="mix color-1 check3 radio3 option1">
-                        <h1>Investment 3</h1>
-                    </li>
-                    <li class="mix color-1 check3 radio2 option4">
-                        <h1>Investment 4</h1>
-                    </li>
-                    <!-- <li class="mix color-1 check1 radio3 option2">
-                        <img src="img/img-5.jpg" alt="Image 5">
-                    </li>
-                    <li class="mix color-2 check2 radio3 option3">
-                        <img src="img/img-6.jpg" alt="Image 6">
-                    </li>
-                    <li class="mix color-2 check2 radio2 option1">
-                        <img src="img/img-7.jpg" alt="Image 7">
-                    </li>
-                    <li class="mix color-1 check1 radio3 option4">
-                        <img src="img/img-8.jpg" alt="Image 8">
-                    </li>
-                    <li class="mix color-2 check1 radio2 option3">
-                        <img src="img/img-9.jpg" alt="Image 9">
-                    </li>
-                    <li class="mix color-1 check3 radio2 option4">
-                        <img src="img/img-10.jpg" alt="Image 10">
-                    </li>
-                    <li class="mix color-1 check3 radio3 option2">
-                        <img src="img/img-11.jpg" alt="Image 11">
-                    </li>
-                    <li class="mix color-2 check1 radio3 option1">
-                        <img src="img/img-12.jpg" alt="Image 12">
-                    </li> -->
-                    <li class="gap"></li>
-                    <li class="gap"></li>
-                    <li class="gap"></li>
-                </ul>
-                <div class="cd-fail-message">No results found</div>
-            </section>
-            <!-- cd-gallery -->
-        
-            <div class="cd-filter">
-                <form>
-                    <div class="cd-filter-block">
-                        <h4>Search</h4>
-        
-                        <div class="cd-filter-content">
-                            <input type="search" placeholder="Try color-1...">
-                        </div>
-                        <!-- cd-filter-content -->
-                    </div>
-                    <!-- cd-filter-block -->
-        
-                    <div class="cd-filter-block">
-                        <h4>Check boxes</h4>
-        
-                        <ul class="cd-filter-content cd-filters list">
-                            <li>
-                                <input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
-                                <label class="checkbox-label" for="checkbox1">Option 1</label>
-                            </li>
-        
-                            <li>
-                                <input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
-                                <label class="checkbox-label" for="checkbox2">Option 2</label>
-                            </li>
-        
-                            <li>
-                                <input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
-                                <label class="checkbox-label" for="checkbox3">Option 3</label>
-                            </li>
-                        </ul>
-                        <!-- cd-filter-content -->
-                    </div>
-                    <!-- cd-filter-block -->
-        
-                    <div class="cd-filter-block">
-                        <h4>Select</h4>
-        
-                        <div class="cd-filter-content">
-                            <div class="cd-select cd-filters">
-                                <select class="filter" name="selectThis" id="selectThis">
-                                    <option value="">Choose an option</option>
-                                    <option value=".option1">Option 1</option>
-                                    <option value=".option2">Option 2</option>
-                                    <option value=".option3">Option 3</option>
-                                    <option value=".option4">Option 4</option>
-                                </select>
-                            </div>
-                            <!-- cd-select -->
-                        </div>
-                        <!-- cd-filter-content -->
-                    </div>
-                    <!-- cd-filter-block -->
-        
-                    <div class="cd-filter-block">
-                        <h4>Radio buttons</h4>
-        
-                        <ul class="cd-filter-content cd-filters list">
-                            <li>
-                                <input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
-                                <label class="radio-label" for="radio1">All</label>
-                            </li>
-        
-                            <li>
-                                <input class="filter" data-filter=".radio2" type="radio" name="radioButton" id="radio2">
-                                <label class="radio-label" for="radio2">Choice 2</label>
-                            </li>
-        
-                            <li>
-                                <input class="filter" data-filter=".radio3" type="radio" name="radioButton" id="radio3">
-                                <label class="radio-label" for="radio3">Choice 3</label>
-                            </li>
-                        </ul>
-                        <!-- cd-filter-content -->
-                    </div>
-                    <!-- cd-filter-block -->
-                </form>
-        
-                <a   class="cd-close">Close</a>
-            </div>
-            <!-- cd-filter -->
-        
-            <a   class="cd-filter-trigger">Filters</a>
-        </main>
+    
         <!-- cd-main-content -->
 
         <style>
