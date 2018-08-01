@@ -95,7 +95,7 @@
                                     </span>
                                     <div class="col-md-8">
                                         <label>Name *</label>
-                                        <input id="name" name="name" type="text" placeholder="Enter your name" class="form-control" required>
+                                        <input id="name" name="name" type="text" placeholder="Enter your name" class="form-control" maxlength="20" required>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -104,7 +104,7 @@
                                     </span>
                                     <div class="col-md-8">
                                         <label>Company *</label>
-                                        <input id="company" name="company" type="text" placeholder="Enter the name of your company" class="form-control" required>
+                                        <input id="company" name="company" type="text" placeholder="Enter the name of your company" class="form-control" maxlength="25" required>
                                     </div>
                                 </div>
 
@@ -114,7 +114,7 @@
                                     </span>
                                     <div class="col-md-8">
                                         <label>E-mail *</label>
-                                        <input id="email" name="email" type="text" placeholder="Enter your e-mail address" class="form-control" required>
+                                        <input id="email" name="email" type="text" placeholder="Enter your e-mail address" class="form-control" maxlength="25" required>
                                     </div>
                                 </div>
 
@@ -124,7 +124,17 @@
                                     </span>
                                     <div class="col-md-8">
                                         <label>Phone *</label>
-                                        <input id="phone" name="phone" type="text" placeholder="Enter your phone number" class="form-control" required>
+                                        <input id="phone" name="phone" type="text" placeholder="Enter your phone number" class="form-control" maxlength="15" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center">
+                                        <i class="fa fa-globe bigicon" style="color:#448F49"></i>
+                                    </span>
+                                    <div class="col-md-8">
+                                        <label>Location *</label>
+                                        <input id="location" name="location" type="text" placeholder="Where is your company located?" class="form-control" maxlength="35" required>
                                     </div>
                                 </div>
 
@@ -134,7 +144,7 @@
                                     </span>
                                     <div class="col-md-8">
                                         <label>Vision</label>
-                                        <input id="vision" name="vision" type="text" placeholder="Explain your vision for the future" class="form-control">
+                                        <input id="vision" name="vision" type="text" placeholder="Explain your vision for the future" maxlength="100" class="form-control">
                                     </div>
                                 </div>
 
@@ -144,7 +154,7 @@
                                     </span>
                                     <div class="col-md-8">
                                         <label>Credibility</label>
-                                        <input id="credibility" name="credibility" type="text" placeholder="Explain your credibility" class="form-control">
+                                        <input id="credibility" name="credibility" type="text" placeholder="Explain your credibility" maxlength="100" class="form-control">
                                     </div>
                                 </div>
 
@@ -154,7 +164,7 @@
                                     </span>
                                     <div class="col-md-8">
                                         <label>One Sentence</label>
-                                        <input id="sentence" name="sentence" type="text" placeholder="Describe your proposal in one sentence" class="form-control">
+                                        <input id="sentence" name="sentence" type="text" placeholder="Describe your proposal in one sentence" maxlength="50" class="form-control">
                                     </div>
                                 </div>
 
@@ -165,7 +175,7 @@
                                     <div class="col-md-8">
                                         <label>Message</label>
                                         <textarea class="form-control" id="message" name="message" placeholder="Please enter any additional notes/messages here."
-                                            rows="7"></textarea>
+                                            rows="7" maxlength="350"></textarea>
                                     </div>
                                 </div>
 
@@ -174,8 +184,8 @@
                                             <i class="fa fa-cloud-upload bigicon" style="color:#448F49"></i>
                                         </span>
                                         <div class="col-md-8">
-                                            <label for="file">Upload supplementary PDF</label>
-                                            <input type="file" id="file" name="file" accept=".pdf">
+                                            <label for="file">Upload supplementary PDF (.pdf) or PowerPoint (.pptx)</label>
+                                            <input type="file" id="file" name="file" accept=".pdf, .pptx">
                                         </div>
                                     </div>
 
