@@ -40,6 +40,7 @@ fields:
   - 2018class
 pages:
 - hugo/content/investments/bioiq.md
+- hugo/content/investments/test.md
 - hugo/content/investments/spinal-singularity.md
 - hugo/content/investments/invoca.md
 - hugo/content/investments/procore.md
