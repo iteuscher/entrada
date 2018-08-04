@@ -111,6 +111,17 @@ body{
   opacity: 1;
 }
 */
+
+.cd-gallery ul .card {
+  transition: all .25s ease-in-out;
+}
+
+.cd-gallery ul .card:hover {
+  box-shadow: 0 10px 20px 0 rgba(68, 143, 73, 0.15);
+  transform: scale(1.02);
+}
+
+
 .card-img-top {
   padding: 20%;
 }
@@ -151,9 +162,9 @@ a.card-link {
   }
 
 .profile-box-overlay{
-  position: absolute;
-  height: 100%;
-  width: 100%;
+  position:fixed;
+  width:100%;
+  height:100%;
   opacity: 0;
   transition: .6s ease;
   background-color: #448f49;
@@ -161,9 +172,9 @@ a.card-link {
 }
   
   
-  .profile-box:hover .profile-box-overlay{
-    opacity: 1;
-  }
+.profile-box:hover .profile-box-overlay{
+  opacity: 1;
+}
   
 .profile-box {
 background: #FFFFFF;
@@ -245,17 +256,16 @@ color: #98A0A6;
 font-weight: 400;
 /* padding: 8px 0; */
 border-radius: 100px;
-transition: .6s;
 cursor: pointer;
 }
 
 #linkedin:hover {
 /* background-color: #53ac59; */
-transition: .6s;
 color: #448f49;
-stroke: white;
+/* stroke: white; */
 fill: #448f49;
 box-shadow: 0 10px 20px 0 rgba(68, 143, 73, 0.3);
+transition: .4s all !important;
 }
 
 #linkedin:hover #linkedin-g {
@@ -270,11 +280,17 @@ box-shadow: 0 10px 20px 0 rgba(68, 143, 73, 0.3);
 
 #linkedin:hover #linkedin-circle {
   stroke: white;
-  transition: .6 ease;
+  transition: .6s !important;
 } 
 
 #linkedin-g{
   fill: white;
+  transition: .4s all !important;
+}
+
+#linkedin:hover #linkedin-g {
+  fill: #448f49;
+  transition: .09s all !important;
 }
 
 #link2 {
