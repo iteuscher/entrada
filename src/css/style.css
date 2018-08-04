@@ -152,14 +152,10 @@ a.card-link {
 
 .profile-box-overlay{
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: .6s ease;
   background-color: #448f49;
   text-align: center;
 }
@@ -264,17 +260,17 @@ box-shadow: 0 10px 20px 0 rgba(68, 143, 73, 0.3);
 
 #linkedin:hover #linkedin-g {
   fill: #448f49;
-  transition: .6s;
+  transition: .6s ease;
 }
 
 #linkedin:hover #linkedin-path {
   fill: white;
-  transition: .6s;
+  transition: .6s ease;
 }
 
 #linkedin:hover #linkedin-circle {
   stroke: white;
-  transition: .6s;
+  transition: .6 ease;
 } 
 
 #linkedin-g{
