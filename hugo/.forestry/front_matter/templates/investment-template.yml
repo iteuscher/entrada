@@ -39,6 +39,11 @@ fields:
   - spievak
   - 2018class
 pages:
+- hugo/content/investments/parentsquare.md
+- hugo/content/investments/medable.md
+- hugo/content/investments/hg-data.md
+- hugo/content/investments/atleta.md
+- hugo/content/investments/cielo.md
 - hugo/content/investments/docfox.md
 - hugo/content/investments/worldviz.md
 - hugo/content/investments/truevision-systems.md
@@ -48,23 +53,18 @@ pages:
 - hugo/content/investments/software-com.md
 - hugo/content/investments/snapwire.md
 - hugo/content/investments/pattern-computer.md
-- hugo/content/investments/parentsquare.md
 - hugo/content/investments/omniupdate.md
 - hugo/content/investments/nextpro.md
 - hugo/content/investments/milo-sensors.md
-- hugo/content/investments/medable.md
 - hugo/content/investments/lark-ellen-farms.md
 - hugo/content/investments/keepe.md
 - hugo/content/investments/jetclosing.md
 - hugo/content/investments/ifluidics.md
 - hugo/content/investments/ibis-networks.md
 - hugo/content/investments/hint.md
-- hugo/content/investments/hg-data.md
 - hugo/content/investments/flume.md
 - hugo/content/investments/cytomx.md
-- hugo/content/investments/cielo.md
 - hugo/content/investments/callwave.md
-- hugo/content/investments/atleta.md
 - hugo/content/investments/american-riviera-branch.md
 - hugo/content/investments/procore.md
 - hugo/content/investments/invoca.md
