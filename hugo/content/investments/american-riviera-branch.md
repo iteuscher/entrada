@@ -1,7 +1,6 @@
 +++
 companyname = "American Riviera Bank"
 date = "2018-08-16T05:11:32+00:00"
-draft = true
 logo = "img/uploads/2018/08/16/americanrivierabank.png"
 shortdescription = "  "
 tags = []
