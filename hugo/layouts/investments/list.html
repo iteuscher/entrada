@@ -48,12 +48,13 @@
     </div>
 
     <main class="cd-main-content">
-            <div class="cd-tab-filter-wrapper">
+            <!-- top filters for class of ... -->
+
+            <!-- <div class="cd-tab-filter-wrapper">
                 <div class="cd-tab-filter">
                     <ul class="cd-filters">
                         <li class="placeholder">
                             <a data-type="all" >All</a>
-                            <!-- selected option on mobile -->
                         </li>
                         <li class="filter">
                             <a class="selected" data-type="all">All</a>
@@ -65,20 +66,17 @@
                             <a   data-type="2018class">Class of 2018</a>
                         </li>
                     </ul>
-                    <!-- cd-filters -->
                 </div>
-                <!-- cd-tab-filter -->
-            </div>
-            <!-- cd-tab-filter-wrapper -->
+            </div> -->
         
             <section class="cd-gallery">
                 <ul>
                     {{ range .Data.Pages }}
-                        <li class="mix card {{ range .Params.tags }} {{ . }} {{ end }}" >
+                        <li class="mix card {{ range .Params.tags }} {{ . }} {{ end }}" style="position: relative; height: 200px; width: 90vw;">
                     <!-- color-1 check3 radio2 option4  -->
                             
                             <a target="_blank" class="card-link" href="{{ .Params.urllink }}"></a>
-                            <img class="card-img-top" src="{{ .Params.logo }}" alt="Card image top">
+                            <img class="card-img-top" src="{{ .Params.logo }}" alt="Card image top" style="position: absolute; height:100%; margin: 0 auto">
                             <!-- <div class="card-img-overlay text-center title-area">
                                 <h2>{{ .Params.companyname }}</h2>
                                 <p class="description text-white">
@@ -91,11 +89,13 @@
                     <li class="gap"></li>
                     <li class="gap"></li>
                 </ul>
-                <div class="cd-fail-message">No results found</div>
+
+                <!-- FILTER NO RESULT MESSAGE -->
+                <!-- <div class="cd-fail-message">No results found</div> -->
             </section>
             <!-- cd-gallery -->
         
-            <div class="cd-filter">
+            <!-- <div class="cd-filter">
                 <form>
                     <div class="cd-filter-block">
                         <h4>Search</h4>
@@ -103,9 +103,7 @@
                         <div class="cd-filter-content">
                             <input type="search" placeholder="Try Biotech...">
                         </div>
-                        <!-- cd-filter-content -->
                     </div>
-                    <!-- cd-filter-block -->
         
                     <div class="cd-filter-block">
                         <h4>Catagories</h4>
@@ -146,55 +144,16 @@
                                 <label class="checkbox-label" for="checkbox6">Robotics</label>
                             </li>
                         </ul>
-                        <!-- cd-filter-content -->
                     </div>
-                    <!-- cd-filter-block -->
-        
-                    <!-- <div class="cd-filter-block">
-                        <h4>Select</h4>
-        
-                        <div class="cd-filter-content">
-                            <div class="cd-select cd-filters">
-                                <select class="filter" name="selectThis" id="selectThis">
-                                    <option value="">Choose an option</option>
-                                    <option value=".option1">Option 1</option>
-                                    <option value=".option2">Option 2</option>
-                                    <option value=".option3">Option 3</option>
-                                    <option value=".option4">Option 4</option>
-                                </select>
-                            </div>
- 
-                        </div>
-                    </div> -->
-                    <!-- cd-filter-block -->
-        
-                    <!-- <div class="cd-filter-block">
-                        <h4>Radio buttons</h4>
-        
-                        <ul class="cd-filter-content cd-filters list">
-                            <li>
-                                <input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
-                                <label class="radio-label" for="radio1">All</label>
-                            </li>
-        
-                            <li>
-                                <input class="filter" data-filter=".radio2" type="radio" name="radioButton" id="radio2">
-                                <label class="radio-label" for="radio2">Choice 2</label>
-                            </li>
-        
-                            <li>
-                                <input class="filter" data-filter=".radio3" type="radio" name="radioButton" id="radio3">
-                                <label class="radio-label" for="radio3">Choice 3</label>
-                            </li>
-                        </ul>
-                    </div> -->
                 </form>
         
                 <a class="cd-close">Close</a>
-            </div>
+            </div> -->
             <!-- cd-filter -->
         
-            <a class="cd-filter-trigger">Filters</a>
+            <!-- HERE -->
+            <!-- filter button link tab -->
+            <!-- <a class="cd-filter-trigger">Filters</a> -->
         </main>        
     
         <!-- cd-main-content -->
