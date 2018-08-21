@@ -121,6 +121,48 @@ body{
   transform: scale(1.02);
 }
 
+.blogpost-header {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blogpost-header-spacer {
+  height: 20px;
+}
+
+#fill-card-link {
+  width: 100%;
+  height: 100%;
+  position: absolute !important;
+  z-index: 4;
+  opacity: 1 !important;
+}
+
+
+.blog-post-title {
+  text-align: center;
+  padding-top: 45px;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+ @media (min-width: 800px) {
+   .blogpost-header {
+     flex-direction: row;
+   }
+
+   .blogpost-header-spacer {
+     width: 20px;
+   }
+
+   .blog-post-title {
+     text-align: center;
+     padding-top: 10px;
+     font-size: 40px;
+   }
+  }
 
 .card-img-top {
   padding: 20%;

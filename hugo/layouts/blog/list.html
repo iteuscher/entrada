@@ -57,6 +57,7 @@
                 {{ range .Data.Pages }}
                 <div class="card-box col-md-4 col-sm-6">
                     <div class="card">
+                        <a id="fill-card-link" href="{{ .Permalink }}">
                 
                         <div class="header">
                 
@@ -66,16 +67,16 @@
                                 <a href="{{ .Permalink }}"></a>
                             </div>
                 
-                            <div class="actions">
+                            <div style="z-index: 5;" class="actions">
                                 <a href="{{ .Permalink }}" class="btn btn-round btn-fill btn-neutral btn-modern">
                                     Read Post
                                 </a>
                             </div>
         
         
-                            <div class="category">
+                            <!-- <div style="z-index: 5;" class="category">
                                 <h6 class="label label-danger">New Post</h6>
-                            </div>
+                            </div> -->
         
         
                         </div>
@@ -87,7 +88,7 @@
                             </h4>
                             <p class="description">{{ .Summary }} </p>
                         </div>
-        
+                        </a>
                     </div>
                     <!-- end card -->
                 </div>

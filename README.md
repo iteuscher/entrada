@@ -1,14 +1,7 @@
-# Hugo Boilerplate
-**A Hugo boilerplate for building modern websites 🌲**
-
-This boilerplate wraps [Hugo](gohugo.io) with [Gulp](https://gulpjs.com/) as your local development build pipeline.
-
+[Hugo](gohugo.io) at the base.
 [PostCSS](http://postcss.org/) and [Webpack](https://webpack.js.org/) + [Babel](https://babeljs.io/) are used for CSS and JS compiling & transpiling.
-
-[BrowserSync](https://www.browsersync.io/) is used for providing a modern local development experience, allowing you to preview your site on multiple devices in sync.
-
+[BrowserSync](https://www.browsersync.io/) is used for providing a modern local development experience
 [BrowsersList](https://github.com/ai/browserslist) is used for configuring Browser support.
-
 [SVG Sprite](https://github.com/jkphl/svg-sprite) is used to generate an SVG Sprite.
 
 # Installation
@@ -96,19 +89,8 @@ npm run hugo -- new posts/example-post.md
      └── js                // JS source files to be compiled to /js/
 ```
 
-# Inline SVG
-Any SVGs found in `src/img/` will be combined into a single SVG Sprite at `hugo/static/svg/sprite.symbol.svg`.
-
-This boilerplate comes with a simple partial for using SVGs in your layouts. You can select an svg by passing in it's ID.
-
-```
-{{/* Using a logo stored at src/img/github.svg */}}
-{{ partial "svg" (dict "id" "github" "class" "optional-class" "width" 32 "height" 32) -}}
-```
-**Note: the `class`, `width`, and `height` params are optional**
-
 # Testing
-This boilerplate comes with standard [ESLint](https://eslint.org/) and [StyleLint](https://github.com/stylelint/stylelint) configurations that will lint your CSS and JS for errors or common style issues, which work with most popular IDEs.
+This comes with standard [ESLint](https://eslint.org/) and [StyleLint](https://github.com/stylelint/stylelint) configurations that will lint your CSS and JS for errors or common style issues, which work with most popular IDEs.
 
 The tests can also be run from the command line:
 
@@ -122,7 +104,7 @@ If you want to automatically fix lint errors, you can do this from the command l
 
 # Cleanup
 
-This boilerplate is self-cleaning, and will remove the production `dist/` and development `.tmp/` folders every time a command is run to ensure that their contents are always up to date.
+This is self-cleaning, and will remove the production `dist/` and development `.tmp/` folders every time a command is run to ensure that their contents are always up to date.
 
 If you wish to manually cleanup, run:
 
@@ -173,15 +155,3 @@ Both PostCSS and Webpack use `.browserslistrc` to decide on browser support when
   - For production pipelines, this is equal to `production`
   - For Forestry's in-app preview feature, this is equal to `staging`
 
-# Using with Forestry
-This repository comes with basic example content pre-configured to work with Forestry, which you can use to start building your site.
-
-- Fork this repository to your account
-- [Sign up for a Forestry account](https://app.forestry.io/signup), and import this repository as an "Existing Site"
-- When prompted for the "Project root", enter `hugo`
-
-# Contributing
-All contributions are welcome! Please see our [Code of Conduct](/.github/CODE_OF_CONDUCT.md) & [Support](/.github/SUPPORT.md) guidelines. 
-
-## Licensing
-This boilerplate project is released under the [MIT license](/LICENSE).

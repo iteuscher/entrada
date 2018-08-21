@@ -41,15 +41,15 @@
 
     <article class="blog-post" style="padding: 5%; margin-top: 40px;">
         <header>
-            <h2 class="blog-post-title" style="text-align: center;">
-                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <h2 class="blog-post-title">
+                {{ .Title }}
             </h2>
 
-            <div style="flex-direction: row; display: flex; align-items: center; justify-content: center;">
+            <div class="blogpost-header">
                 <img style="max-width: 80%; max-height: 75%; overflow: hidden;"
                     src="{{ .Params.image }}">
 
-                <div style="width: 20px;"></div>
+                <div class="blogpost-header-spacer"></div>
 
                 <p>Posted on {{ .Date.Format "01/01/2006" }}
                     <br>
@@ -68,9 +68,10 @@
 
         <br>
 
-        <h3>
-            <a href="/blog/"><- To Blog Page</a>
-        </h3>
+        <div class="button-get-started" style="display: flex; justify-content: center;">
+            <a href="/blog" style="font-size: 16px !important; margin: 0 auto; max-width: 100%;" class="btn btn-danger btn-fill btn-lg">To Blog Homepage</a>
+        </div>
+
         <h1></h1>
 
     </article>
